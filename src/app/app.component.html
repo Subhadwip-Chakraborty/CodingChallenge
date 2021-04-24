@@ -1,0 +1,279 @@
+<div class="container">
+  <h1 class="bg-success text-white justify-content-center">    Participant Information</h1>
+
+</div>
+<br>
+<br>
+
+<div class="container-fluid">
+
+  <form [formGroup]="register" (ngSubmit)="onSubmit()">
+
+    <div class="row">
+      <div class="col">
+        <label>Join the 3 days web development 
+          virtual Workshop and become a hirable
+          fresher
+        </label><br><br>
+        <label>
+          Participant Fee:$200
+        </label><br><br>
+        <label>
+          Limited slots!Reserve now
+        </label>
+      </div>
+      <div class="col">
+        <label>May 1-3   9:00 AM-1:00PM EST</label><br><br>
+        <label>May 15-18   9:00 AM-1:00PM EST</label><br><br>
+        <label>June 1-3   9:00 AM-1:00PM EST</label><br><br>
+        <label>June 15-18   9:00 AM-1:00PM EST</label><br><br>
+        <label>July 1-3   9:00 AM-1:00PM EST</label><br><br>
+        <label>July 15-18   9:00 AM-1:00PM EST</label><br><br>
+      </div>
+    </div>
+    <br><br>
+
+    <h3> <label class="bg-primary text-white"> Please rate your Development or programming language</label></h3><br>
+    <div class="form-check form-group">
+      <input type="checkbox" class="form-check-input " value="I dont have any idea at all" formControlName="ch1">I dont
+      have any idea at all
+      <hr>
+      <input type="checkbox" class="form-check-input" value="I am a newbie in web development and programming" formControlName="ch2">I am a newbie in web development and programming
+      <hr>
+      <input type="checkbox" class="form-check-input" value="I have watched tutorials online" formControlName="ch3">I have watched tutorials online
+      <hr>
+      <input type="checkbox" class="form-check-input" value="I have a web development related working experience" formControlName="ch4">I have a web development related working experience
+      <hr>
+      <input type="checkbox" class="form-check-input" value="I have a web development related working experience" formControlName="ch5">I am currently working as a web developer
+      <hr>
+      <input type="checkbox" class="form-check-input" value="I am currently working as a web developer and wants to improve
+      myself" formControlName="ch6">I am currently working as a web developer and wants to improve
+      myself
+      <hr>
+    </div>
+    <br>
+    <h3> <label class="bg-primary text-white"> Please rate your Development or programming language</label></h3><br>
+    <div class="form-check form-group">
+      <div class="row">
+        <div class="col">
+          <input type="checkbox" class="form-check-input " value="HTML" formControlName="h1">HTML
+          <br>
+          <input type="checkbox" class="JavaScript" value="Instagram" formControlName="h2">JavaScript
+          <br>
+          <input type="checkbox" class="form-check-input" value="Database" formControlName="h3">Database
+          <br>
+          <input type="checkbox" class="form-check-input " value="Ruby on rails" formControlName="h4">Ruby on rails
+          <br>
+          <input type="checkbox" class="form-check-input" value="DevOps" formControlName="h5">DevOps
+          <br>
+          <input type="checkbox" class="form-check-input" value="Front-End development" formControlName="h6">Front-End development
+          <br>
+        </div>
+        <div class="col">
+          <input type="checkbox" class="form-check-input " value="CSS" formControlName="h7">CSS
+          <br>
+          <input type="checkbox" class="JavaScript" value="PHP" formControlName="h8">PHP
+          <br>
+          <input type="checkbox" class="form-check-input" value="WordPress" formControlName="h9">WordPress
+          <br>
+          <input type="checkbox" class="form-check-input " value="Python" formControlName="h10">Python(Django and Flask)
+          <br>
+          <input type="checkbox" class="form-check-input" value="Web Security" formControlName="h11">Web Security
+          <br>
+          <input type="checkbox" class="form-check-input" value="Backend Development" formControlName="h12">Backend Development
+          <br>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+    
+    <div class="form-group">
+      <h3><label class="bg-primary text-white">Personal Information</label></h3>
+      <div class="row">
+        <div class="col">
+          <label>First Name</label>
+          <input type="text" class="form-control" formControlName="firstName">
+          <span class="error" *ngIf="firstName.invalid && firstName.touched" class="text-danger">Username invalid</span>
+        </div>
+        <div class="col"> <label>Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName">
+          <span class="error" *ngIf="lastName.invalid && lastName.touched" class="text-danger">Last Name is invalid</span>
+        </div>
+      </div>
+     
+    </div>
+    <hr class="text-primary">
+
+    <!-- <div class="form-group"> -->
+
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-2">  
+          <label>Area Code</label>
+          <input type="text" class="form-control" formControlName="areaCode">
+          <span class="error" *ngIf="areaCode.invalid && areaCode.touched" class="text-danger">Area Code is required</span>
+        </div>
+        <div class="col-10">
+          <label>Phone Number</label>
+          <input type="text" class="form-control" formControlName="phoneNumber">
+          <span class="error" *ngIf="phoneNumber.invalid && phoneNumber.touched" class="text-danger">Phone number is
+            required</span>
+        </div>
+      </div>
+    
+      
+     
+    </div>
+    <hr class="text-primary">
+
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" class="form-control" formControlName="email">
+      <span class="error" *ngIf="email.invalid && email.touched" class="text-danger">Email is not valid</span>
+    </div>
+
+    <hr class="text-primary">
+
+    <div class="form-group">
+      <div class="row">
+        <div class="col-md-6 col-sm-6" style="text-align:left;">
+          <label>Street Address</label>
+          <input type="email" class="form-control" formControlName="street">
+          <span class="error" *ngIf="street.invalid && street.touched" class="text-danger">Please ENter the street
+            address</span>
+        </div>
+        <div class="col-md-6 col-sm-6">
+
+          <label>Street Address Line 2</label>
+          <input type="email" class="form-control" formControlName="street2">
+          <span class="error" *ngIf="street2.invalid && street2.touched" class="text-danger">Please Enter the street
+            address Line 2</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="row">
+          <div class="col-6">
+            <label>City</label>
+            <input type="text" class="form-control" formControlName="city">
+            <span class="error" *ngIf="city.invalid && city.touch" class="text-danger">Please Enter the City</span>
+          </div>
+          <div class="col-6">
+            <label>State</label>
+            <input type="text" class="form-control" formControlName="state">
+            <span class="error" *ngIf="state.invalid && state.touch" class="text-danger">Please Enter the State</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Occupation</label>
+        <input type="text" class="form-control" formControlName="occupation">
+        <span class="error" *ngIf="occupation.invalid && occupation.touch" class="text-danger">Please Enter the State</span>
+      </div>
+
+      <div class="form-group">
+        <label>Company Name</label>
+        <input type="text" class="form-control" formControlName="companyName">
+        <span class="error" *ngIf="companyName.invalid && companyName.touch" class="text-danger">Please Enter the State</span>
+      </div>
+      <div class="form-group">
+        <label>Job title</label>
+        <input type="text" class="form-control" formControlName="job">
+        <span class="error" *ngIf="job.invalid && job.touch" class="text-danger">Please Enter the State</span>
+      </div>
+       
+
+      
+
+    </div>
+    <br>
+    <br>
+
+    <h2> <label class="bg-primary text-white align-items-center">Payment Information</label></h2><br>
+    <h5><label> WorkShop dates</label></h5><br>
+    <div class="form-check form-group">
+     <div class="row">
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="May 1-3" formControlName="m1">May 1-3
+          <br>
+          <input type="checkbox" class="form-check-input" value="June 1-3" formControlName="m2">June 1-3
+          <br>
+          <input type="checkbox" class="form-check-input" value="July 1-3" formControlName="m3">July 1-3
+          <br>
+       </div>
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="May 15-18" formControlName="m4">May 15-18S
+          <br>
+          <input type="checkbox" class="form-check-input" value="June 1-3" formControlName="m5">June 15-18
+          <br>
+          <input type="checkbox" class="form-check-input" value="July 1-3" formControlName="m6">July 1-3
+          <br>
+       </div>
+     </div>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <h5><label>Add Comments</label></h5>
+      <textarea palceholder="please share your views" class="form-control" formControlNmae="comment"></textarea>
+
+    
+    </div>
+    <br>
+    <h5> <label >How did you learn about this virtual training Program</label></h5><br>
+
+    <div class="form-check form-group">
+     <div class="row">
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="facebook" formControlName="l1">facebook
+          <br>
+          <input type="checkbox" class="form-check-input" value="Instagram" formControlName="l2">Instagram
+          <br>
+          <input type="checkbox" class="form-check-input" value="Search Engine" formControlName="l3">Search Engine
+          <br>
+       </div>
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="Twitter" formControlName="l4">Twitter
+          <br>
+          <input type="checkbox" class="form-check-input" value="YouTube" formControlName="l5">YouTube
+          <br>
+          <input type="checkbox" class="form-check-input" value="Online ads" formControlName="l6">Online ads
+          <br>
+       </div>
+     </div>
+    </div>
+
+    <!-- <hr class="text-primary">
+    <div class="form-group">
+      <lable><h4>Occupation</h4></lable>
+      <input type="text" class="form-control" formControlName="occupation">
+      <span class="error" *ngIf="occupation.invalid && occupation.touched" class="text-danger">Please Enter your occupation</span>
+    </div> -->
+    <!-- <hr class="text-primary">
+    <div class="form-group">
+      <lable><h4>Company Name</h4></lable>
+      <input type="text" class="form-control" formControlName="company">
+      <span class="error" *ngIf="company.invalid && company.touched" class="text-danger">Please Enter your Company Name</span>
+    </div>
+    <hr class="text-primary">
+    <div class="form-group">
+      <lable><h4>Job Position</h4></lable>
+      <input type="text" class="form-control" formControlName="job">
+      <span class="error" *ngIf="job.invalid && job.touched" class="text-danger">Please Enter your Company Name</span>
+    </div>
+     -->
+
+
+
+
+    <br>
+    <button class="btn btn-primary"  type="submit">submit</button>
+
+  </form>
+</div>

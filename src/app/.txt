@@ -1,0 +1,81 @@
+  <div class="form-group">
+      <h3> <label class="bg-primary text-white"> Payment Information</label></h3><br>
+      <div class="row">
+        <div class="col">
+          <div class="form-check form-group">
+            <input type="checkbox" class="form-check-input " value="May 1-3" formControlName="m1">May 1-3
+            have any idea at all
+            <hr>
+            <input type="checkbox" class="form-check-input" value="June 1-3" formControlName="ch1">June 1-3
+            <hr>
+            <input type="checkbox" class="form-check-input" value="July 1-3" formControlName="ch2">July 1-3
+            <hr>
+        </div>
+        <div class="col">
+          <input type="checkbox" class="form-check-input " value="May 15-18" formControlName="m1">May 15-18
+            have any idea at all
+            <hr>
+            <input type="checkbox" class="form-check-input" value="June 1-3" formControlName="ch1">June 15-18
+            <hr>
+            <input type="checkbox" class="form-check-input" value="July 1-3" formControlName="ch2">July 1-3
+            <hr>
+        </div>
+      </div>
+    </div>
+
+
+
+    =============================================================
+    <h2> <label class="bg-primary text-white align-items-center">Payment Information</label></h2><br>
+    <h5><label> WorkShop dates</label></h5><br>
+    <div class="form-check form-group">
+     <div class="row">
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="May 1-3" formControlName="m1">May 1-3
+          <br>
+          <input type="checkbox" class="form-check-input" value="June 1-3" formControlName="m2">June 1-3
+          <br>
+          <input type="checkbox" class="form-check-input" value="July 1-3" formControlName="m3">July 1-3
+          <br>
+       </div>
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="May 15-18" formControlName="m4">May 15-18S
+          <br>
+          <input type="checkbox" class="form-check-input" value="June 1-3" formControlName="m5">June 15-18
+          <br>
+          <input type="checkbox" class="form-check-input" value="July 1-3" formControlName="m6">July 1-3
+          <br>
+       </div>
+     </div>
+    </div>
+    <br>
+
+    <div class="form-group">
+      <h5><label>Add Comments</label></h5>
+      <textarea palceholder="please share your views" class="form-control" formControlNmae="comment"></textarea>
+
+    
+    </div>
+    <br>
+    <h5> <label >How did you learn about this virtual training Program</label></h5><br>
+
+    <div class="form-check form-group">
+     <div class="row">
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="facebook" formControlName="l1">facebook
+          <br>
+          <input type="checkbox" class="form-check-input" value="Instagram" formControlName="l2">Instagram
+          <br>
+          <input type="checkbox" class="form-check-input" value="Search Engine" formControlName="l3">Search Engine
+          <br>
+       </div>
+       <div class="col">
+          <input type="checkbox" class="form-check-input " value="Twitter" formControlName="l4">Twitter
+          <br>
+          <input type="checkbox" class="form-check-input" value="YouTube" formControlName="l5">YouTube
+          <br>
+          <input type="checkbox" class="form-check-input" value="Online ads" formControlName="l6">Online ads
+          <br>
+       </div>
+     </div>
+    </div>
